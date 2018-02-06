@@ -99,8 +99,6 @@
             $('.editorpartOpts').fadeOut().remove();
         })
       $(".editor-textStyle-item div").click(function () {
-          $(".editorpart").removeClass("editor-active");
-          $('.editorpartOpts').fadeOut().remove();
         var target = this;
         if ($(target).hasClass("editor-textStyle-color")) { //editor-textStyle-color颜色--------------------------------------------------------------------------------------------------------------
           var styleArr = ["#232323", "#2196F3", "#795548", "#00BCD4", "#4CAF50", "#E666E5", "#FF9800", "#FF5722", "#ff2a1a", "#ff2a1a", "#FFEB3B", "#fff"];
@@ -257,8 +255,6 @@
     function clearEditor() {
       $('#editor-textarea').empty();
       $('#editor-textarea').css("background-color", "#fff");
-      $(".editorpart").removeClass("editor-active");
-      $('.editorpartOpts').fadeOut().remove();
     }
     function OKEditor() {
       var length = $(".editorpart").length;
